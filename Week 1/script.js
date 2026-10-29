@@ -11,6 +11,12 @@ let validUserPW = "pw"
 let loggedInAdmin = false
 let loggedInUser = false
 
+/* 
+This simple app shows the confidentiality aspect of the CIA triad,
+here I have demonstrated how content is shown or hidden dynamically
+based on who is logged in. And if no one is logged in all content is hidden.
+*/
+
 // revokes login - just sets logged in booleans to false in this case & hides displayed message
 function logout() {
     if (loggedInAdmin == true || loggedInUser == true) {
