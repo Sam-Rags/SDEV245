@@ -1,5 +1,6 @@
 # required import run pip install cryptography if needed
 from cryptography.fernet import Fernet
+from getpass import getpass
 
 # Generate a key
 key = Fernet.generate_key()
@@ -13,7 +14,7 @@ cipher = Fernet(key)
 # Decodes using built in functions (note that the decode("utf-8") calls just convert it to String for easy concatenation)
 while True:
     #While True statement causes this to loop until user aborts 
-    message = input("Enter your secret message or 'stop' to quit: ")
+    message = getpass("Enter your secret message or 'stop' to quit: ")
     if message.upper() != "STOP":
         encrypted = cipher.encrypt(message.encode())
         enc_bytes = encrypted.decode("utf-8")
