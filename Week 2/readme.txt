@@ -1,0 +1,3 @@
+Here are two files each representing different types of encryption. The first file, encryption_asymmetric.py uses the RSA method. It generates a private key & public key and then asks for user input. It takes that input, encrypts it with the given key and then decrypts it again and prints the original message out.
+The Second file, encryption_symmetric.py is much more simple, using the AES algorithm it takes a user input, encrypts it with a secret key and prints out the encrypted text. It then decrypts the text using the secret key & prints out the original text.
+NOTE: These files use the getpass import & input functions which work like Linux sudo terminal inputs, you won't see characters appear as you type the "secret messages" but it is reading keyboard inputs.
